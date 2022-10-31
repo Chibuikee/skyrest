@@ -1,0 +1,53 @@
+svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.nav {
+  position: relative;
+}
+.Nav-ctn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.Hero-ctn {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://preview.colorlib.com/theme/glint/images/hero-bg.jpg");
+}
+.Nav-heading {
+  align-items: center;
+  gap: 10%;
+}
+.Nav-social,
+.Nav-menu {
+  list-style: none;
+}
+.Flex {
+  display: flex;
+  align-items: center;
+}
+.scroll {
+  align-items: center;
+}
+.WhatWeDo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.ceo-image {
+  height: 100px;
+  width: 100px;
+}
+/* .Nav-main {
+  display: none;
+}
+.menuToggle:hover ~ .Nav-main {
+  display: block;
+} */
+.contactUs {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://preview.colorlib.com/theme/glint/images/xcontact-bg.jpg.pagespeed.ic.Yg-_T7iMmI.webp");
+}
