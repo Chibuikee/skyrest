@@ -1,15 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 svg {
   width: 1.6rem;
   height: 1.6rem;
 }
 .nav {
   position: relative;
+  padding: 3.6rem 3rem 3.6rem 3.6rem;
 }
 .Nav-ctn {
   position: absolute;
-  top: 0;
+  top: 3.6rem;
   right: 0;
 }
+/* .Nav-heading span {
+  color: black;
+} */
 .Hero-ctn {
   height: 100vh;
   background-position: center;
@@ -39,10 +52,24 @@ svg {
   height: 100px;
   width: 100px;
 }
-/* .Nav-main {
-  display: none;
+.Nav-main {
+  /* position: absolute; */
+  top: 0;
+  background: #0c0c0c;
+  color: rgb(255, 255, 255);
+  font-family: "montserrat-light", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.846;
+  padding: 3.6rem 3rem 3.6rem 3.6rem;
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: transform 1.5s ease;
 }
-.menuToggle:hover ~ .Nav-main {
+
+/* .menuToggle:hover ~ .Nav-main {
   display: block;
 } */
 .contactUs {
