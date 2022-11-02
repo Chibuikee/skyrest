@@ -3,6 +3,8 @@ import { links } from "./Navbar/Navbardata";
 function Hero() {
   return (
     <section>
+      {" "}
+      <div className="overlay"></div>
       <div className="Hero-ctn Flex">
         <div>
           <h3>WELCOME TO SKYREST</h3>
@@ -30,7 +32,7 @@ function Hero() {
           ))}
         </ul>
       </div>
-      <div>
+      <div className="hero-cta-btn Flex">
         <button>START A PROJECT</button>
         <button>MORE ABOUT US</button>
       </div>

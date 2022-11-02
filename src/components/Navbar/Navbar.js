@@ -13,18 +13,18 @@ function Navbar() {
   //     };
   //   }, []);
   const navtogglerStyle = {
-    transform: `translate(${navBarToggle ? "-70%" : "50%"})`,
+    transform: `translate(${navBarToggle ? "-50%" : "50%"})`,
   };
   return (
     <nav className="nav">
-      <h1>SKYREST</h1>
+      <h1 className="logo">Skyrest</h1>
       <div className="Nav-ctn">
         <div
           onClick={() => setNavBarToggle(!navBarToggle)}
           className="Flex menuToggle"
         >
           <h4>MENU</h4>
-          <HiMenu />
+          <HiMenu className="menuToggle-icon" />
         </div>
         <div style={navtogglerStyle} className="Nav-main">
           <div className="Nav-heading Flex">
@@ -45,21 +45,12 @@ function Navbar() {
           </p>
           <ul className="Nav-social Flex">
             {links.map((item, key) => (
-              <li
-                key={key}
-                className="gap-4 flex items-center justify-center border-solid border-2 w-12 h-12 rounded-full border-red-500"
-              >
+              <li key={key} className="">
                 <a
                   href="https://www.linkedin.com/in/chibuike-ewenike-960599172/"
                   className=""
                 >
-                  <svg
-                    className="w-6 h-6 fill-current "
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox={item.box}
-                  >
-                    {item.title}
-                  </svg>
+                  <item.title className="nav-svg" />
                 </a>
               </li>
             ))}
