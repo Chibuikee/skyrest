@@ -47,8 +47,11 @@ a {
   opacity: 0.6;
   background-color: #000000;
 }
-/* .menuToggle {
-} */
+.menuToggle {
+  position: relative;
+  top: 5px;
+  right: 40px;
+}
 .menuToggle h4 {
   display: block;
   padding-left: 12px;
@@ -144,6 +147,12 @@ a {
   width: 70%;
   margin-left: 40px;
 }
+.hero-social-ctn {
+  list-style-type: none;
+}
+.hero-social {
+  margin-right: 50px;
+}
 /* .menuToggle:hover ~ .Nav-main {
   display: block;
 } */
@@ -164,11 +173,12 @@ a {
   height: 1.3rem;
   z-index: 90;
 }
-svg {
+/* svg {
   width: 1.6rem;
   height: 1.6rem;
   color: red;
-}
+  hero-social
+} */
 .hero-cta-btn {
   position: absolute;
   bottom: 50px;
@@ -181,4 +191,14 @@ svg {
   background: transparent;
   color: #ffffff;
   border: #ffffff solid 1px;
+}
+
+.hero-social {
+  width: 1.9rem;
+  height: 1.9rem;
+  color: #ffffff;
+  position: relative;
+  border: #ffffff 2px solid;
+  border-radius: 50% 50%;
+  padding: 5px 5px;
 }
