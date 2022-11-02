@@ -106,10 +106,13 @@ a {
 .scroll {
   align-items: center;
 }
-.WhatWeDo {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+@media screen and (min-width: 1000px) {
+  .WhatWeDo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 .ceo-image {
   height: 100px;
   width: 100px;
@@ -201,4 +204,7 @@ a {
   border: #ffffff 2px solid;
   border-radius: 50% 50%;
   padding: 5px 5px;
+}
+.clients-logo {
+  overflow: auto;
 }

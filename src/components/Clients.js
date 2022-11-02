@@ -15,7 +15,7 @@ function Clients() {
     <div>
       <h4>OUR CLIENTS</h4>
       <h2>Skyrest has been honored to partner up with these clients</h2>
-      <div className="Flex">
+      <div className="Flex clients-logo">
         {clients.map((item) => (
           <img style={{ width: "100px", height: "100px" }} src={item} />
         ))}

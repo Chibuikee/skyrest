@@ -42,13 +42,7 @@ function ContactUs() {
                   href="https://www.linkedin.com/in/chibuike-ewenike-960599172/"
                   className=""
                 >
-                  <svg
-                    className="w-6 h-6 text-[#afb5bd] fill-current "
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox={item.box}
-                  >
-                    {item.title}
-                  </svg>
+                  <item.title className="nav-svg" />
                 </a>
               </li>
             ))}
