@@ -2,11 +2,11 @@ import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 function Footer() {
   return (
-    <section>
-      <div className=" footer">
-        <div id="footer-text-ctn">
+    <section className="">
+      <div className="footer">
+        <div className="footer-text-ctn md:flex md:px-[10rem] md:w-[100%] w-[80%] mx-auto">
           <div>
-            <h1>SKYREST</h1>
+            <h1 className="">SKYREST</h1>
             <p className="footer-text">
               Proin eget tortor risus. Mauris blandit aliquet elit, eget
               tincidunt nibh pulvinar a. Praesent sapien massa, convallis a
