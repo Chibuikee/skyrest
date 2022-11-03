@@ -208,3 +208,57 @@ a {
 .clients-logo {
   overflow: auto;
 }
+.W-wrap {
+  overflow-wrap: break-word;
+}
+#footer-text-ctn {
+  display: flex;
+  width: 90%;
+}
+.footer-text {
+  width: 50%;
+}
+#form {
+  margin-bottom: 3rem;
+}
+.form-ctn {
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  margin-bottom: 1.8rem;
+}
+.form-ctn input {
+  padding: 1.2rem 160px 1.2rem 15px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.form-ctn button {
+  color: #ffffff;
+  background: #39b54a;
+  border-color: #39b54a;
+  padding: 10px 20px;
+}
+.footer {
+  background-color: #111111;
+
+  padding-top: 9rem;
+  padding-right: 0px;
+  padding-bottom: 6rem;
+  padding-left: 0px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  margin: 5.4rem auto auto 0;
+  justify-content: center;
+}
+#copyright-span {
+  display: inline-block;
+  padding: 0 1rem 0 1.2rem;
+}
+.copyright > h5 a {
+  color: #ffffff;
+}

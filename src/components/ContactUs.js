@@ -14,11 +14,11 @@ function ContactUs() {
         <div>
           <div>
             <h4>{address.name}</h4>
-            <h4>{address.info}</h4>
+            <h4 className="W-wrap">{address.info}</h4>
           </div>
           <div>
             <h4>{email.name}</h4>
-            <h4>
+            <h4 className="W-wrap">
               {email.info.map((item, key) => (
                 <span key={key}>{item}</span>
               ))}
