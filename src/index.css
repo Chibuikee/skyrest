@@ -118,8 +118,8 @@ a {
 }
 
 .ceo-image {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
 }
 .Nav-main {
   top: 0;
@@ -237,22 +237,20 @@ a {
   background-color: transparent;
   outline: none;
 }
-
-.form-ctn button {
+ceo .form-ctn button {
   color: #ffffff;
   background: #39b54a;
   border-color: #39b54a;
   padding: 10px 20px;
 }
-.footer {
+/* .footer {
   background-color: #111111;
-
   padding-top: 9rem;
   padding-right: 0px;
   padding-bottom: 6rem;
   padding-left: 0px;
   color: rgba(255, 255, 255, 0.3);
-}
+} */
 .copyright {
   text-align: center;
   font-size: 14px;
@@ -265,4 +263,10 @@ a {
 }
 .copyright > h5 a {
   color: #ffffff;
+}
+.details {
+  display: none;
+}
+.Work-card:hover .details {
+  display: block;
 }

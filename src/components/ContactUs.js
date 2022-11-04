@@ -5,7 +5,7 @@ import MessageForm from "./MessageForm";
 function ContactUs() {
   const { address, email, phone } = contactUsInfo;
   return (
-    <div className="contactUs">
+    <div className="contactUs md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
       <h3>CONTACT US</h3>
       <h1>Reach out for a new project or just say hello</h1>
 

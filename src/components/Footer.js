@@ -3,11 +3,14 @@ import { HiOutlineMail } from "react-icons/hi";
 function Footer() {
   return (
     <section className="">
-      <div className="footer">
-        <div className="footer-text-ctn md:flex md:px-[10rem] md:w-[100%] w-[80%] mx-auto">
+      {/* <div className=" bg-[#111111] text-[rgba(255,255,255,0.3)] w-[90%] mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px]"> */}
+      <div className="pb-[60px] pt-[90px] bg-[#111111] text-[rgba(255,255,255,0.3)] mx-auto">
+        <div className="footer-text-ctn md:flex md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
           <div>
-            <h1 className="">SKYREST</h1>
-            <p className="footer-text">
+            <h1 className="mb-[3.6rem] text-[1.6rem] text-[#ffffff] font-extrabold ">
+              SKYREST
+            </h1>
+            <p className="footer-text ">
               Proin eget tortor risus. Mauris blandit aliquet elit, eget
               tincidunt nibh pulvinar a. Praesent sapien massa, convallis a
               pellentesque nec, egestas non nisi. Mauris blandit aliquet elit,
@@ -17,7 +20,9 @@ function Footer() {
             </p>
           </div>
           <div>
-            <h4>Get Notified</h4>
+            <h4 className="mb-[3.6rem] text-[#FFFF] text-[1.6rem]">
+              Get Notified
+            </h4>
             <p className="footer-text">
               Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae
               aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt

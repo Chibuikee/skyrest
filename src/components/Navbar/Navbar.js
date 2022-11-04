@@ -16,7 +16,7 @@ function Navbar() {
     transform: `translate(${navBarToggle ? "-50%" : "50%"})`,
   };
   return (
-    <nav className="nav">
+    <nav className="w-[90%] mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px]">
       <h1 className="logo">Skyrest</h1>
       <div className="Nav-ctn">
         <div

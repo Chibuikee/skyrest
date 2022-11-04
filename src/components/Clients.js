@@ -12,7 +12,7 @@ function Clients() {
     "https://preview.colorlib.com/theme/glint/images/clients/xmagento.png.pagespeed.ic.dhkdk5A1Gu.webp",
   ];
   return (
-    <div>
+    <div className="md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
       <h4>OUR CLIENTS</h4>
       <h2>Skyrest has been honored to partner up with these clients</h2>
       <div className="Flex clients-logo">
