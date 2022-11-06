@@ -31,9 +31,9 @@ function Hero() {
           <button>START A PROJECT</button>
           <button>MORE ABOUT US</button>
         </div>
-        <div className="scroll Flex">
+        <div className="scroll Flex gap-4">
           <span>﹀</span>
-          <h4>SCROLL DOWN</h4>
+          <h4 className="">SCROLL DOWN</h4>
         </div>
       </div>
     </section>

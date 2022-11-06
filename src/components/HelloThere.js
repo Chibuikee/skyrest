@@ -8,10 +8,17 @@ function HelloThere() {
     { title: "Happy Clients", amount: "102" },
   ];
   return (
-    <div className="bg-[#39b54a] md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
-      <h3 className="text-[1.7rem] text-center">HELLO THERE</h3>
-      <h1 className="text-[6.5rem] text-center ">We Are Glint</h1>
-      <p className="text-[1.4rem] text-center">
+    <div className="bg-[#39b54a] pt-[162px] text-[#ffffff] pb-[90px] md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
+      <div className="pb-[21px] mb-[36px]">
+        <h3 className="text-[1rem] text-center font-bold text-[#000000] tracking-[0.25rem] ">
+          HELLO THERE
+        </h3>
+        <h1 className="text-[4.2rem] text-center font-[600] mb-[18px] ">
+          We Are Skyrest
+        </h1>
+        <div className="bg-[rgba(255,255,255,0.25)] w-[75%] h-[1px] mx-auto"></div>
+      </div>
+      <p className="text-[1.5rem] leading-[2.625rem] text-center px-[15px] mb-[3rem]">
         Mayowa Adeboye dolor sit amet, consectetur adipisicing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -20,11 +27,15 @@ function HelloThere() {
         sint occaecat cupidatat non proident, sunt in culpa qui officia
         deserunt.
       </p>
-      <div className="grid grid-cols-[1fr,1fr]">
+      <div className="relative achievements-ctn mt-[30px] mb-[39px] grid grid-cols-[1fr,1fr] mx-auto w-[90%] justify-items-center gap-y-8">
         {data.map((item, key) => (
-          <div key={key}>
-            <h5 className="text-[8rem]">{item.amount}</h5>
-            <h5 className="text-[1.8rem] text-[#000000]">{item.title}</h5>
+          <div key={key} className="my-[15px] ">
+            <h5 className="text-[5.25rem] leading-[5.25rem] font-semibold">
+              {item.amount}
+            </h5>
+            <h5 className="mt-[18px] mb-[15px] text-[1.8rem] text-[#000000]">
+              {item.title}
+            </h5>
           </div>
         ))}
       </div>

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +10,7 @@
 }
 html {
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 a {
   text-decoration: none;
@@ -109,6 +111,10 @@ a {
 }
 .scroll {
   align-items: center;
+  position: relative;
+  right: -85%;
+  color: #ffffff;
+  bottom: 50px;
 }
 @media screen and (min-width: 1000px) {
   .WhatWeDo {
@@ -119,7 +125,7 @@ a {
 
 .ceo-image {
   height: 200px;
-  width: 200px;
+  width: 100px;
 }
 .Nav-main {
   top: 0;
@@ -139,12 +145,19 @@ a {
   /* font-size: 1.3rem; */
   /* line-height: 1.846; */
 }
-.Hero-ctn {
+.Hero-main {
   height: 100vh;
-  font-size: 3.1vw;
+  /* font-size: 3.1vw; */
   background-position: center;
   background-size: cover;
   background-image: url("https://preview.colorlib.com/theme/glint/images/hero-bg.jpg");
+}
+.Hero-ctn {
+  height: 100vh;
+  font-size: 3.1vw;
+  /* background-position: center;
+  background-size: cover; */
+  /* background-image: url("https://preview.colorlib.com/theme/glint/images/hero-bg.jpg"); */
 }
 .Hero-ctn h1,
 .Hero-ctn h3 {
@@ -190,7 +203,8 @@ a {
   position: absolute;
   bottom: 50px;
   left: 40px;
-  width: 30%;
+  gap: 20px;
+  /* width: 40%; */
   justify-content: space-between;
 }
 .hero-cta-btn button {
@@ -208,6 +222,24 @@ a {
   border: #ffffff 2px solid;
   border-radius: 50% 50%;
   padding: 5px 5px;
+}
+.achievements-ctn :nth-child(2) ::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  width: 1px;
+  left: 50%;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.25);
+}
+.achievements-ctn :nth-child(4) ::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  width: 1px;
+  left: 50%;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.25);
 }
 .clients-logo {
   overflow: auto;
