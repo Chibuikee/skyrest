@@ -11,10 +11,12 @@ function Whatwedo() {
       </h2>
       <div className="WhatWeDo grid grid-cols-[1fr,1fr]">
         {WhatwedoData.map((item) => (
-          <div>
-            <item.icon size={48} />
-            <h4 className="text-[2.5rem]">{item.title}</h4>
-            <h4>{item.info}</h4>
+          <div className="flex">
+            <item.icon size={48} className="basis-1/4" />
+            <div className="basis-3/4">
+              <h4 className="text-[2.5rem]">{item.title}</h4>
+              <h4>{item.info}</h4>
+            </div>
           </div>
         ))}
       </div>

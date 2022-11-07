@@ -5,11 +5,16 @@ import MessageForm from "./MessageForm";
 function ContactUs() {
   const { address, email, phone } = contactUsInfo;
   return (
-    <div className="contactUs md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
-      <h3>CONTACT US</h3>
-      <h1>Reach out for a new project or just say hello</h1>
+    <div className="relative text-[#ffffff] pt-[9.375rem] pb-[7.5rem] contactUs md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
+      <div className="bg-[#000000] opacity-60 absolute top-0 left-0 h-full w-full"></div>
+      <h3 className="text-[#39b54a] text-[1rem] text-center font-bold tracking-[0.25rem] relative">
+        CONTACT US
+      </h3>
+      <h2 className="text-[3rem] text-center font-[600] mb-[18px] relative">
+        Reach out for a new project or just say hello
+      </h2>
 
-      <div className="Contact-ctn Flex">
+      <div className="Contact-ctn lg:Flex relative">
         <MessageForm />
         <div>
           <div>
