@@ -10,13 +10,15 @@ function ContactUs() {
       <h3 className="text-[#39b54a] text-[1rem] text-center font-bold tracking-[0.25rem] relative">
         CONTACT US
       </h3>
-      <h2 className="text-[3rem] text-center font-[600] mb-[18px] relative">
+      <h2 className="text-[2.75rem] text-center font-[600] mb-[18px] relative">
         Reach out for a new project or just say hello
       </h2>
 
-      <div className="Contact-ctn lg:Flex relative">
-        <MessageForm />
-        <div className="text-[1rem] ">
+      <div className="Contact-ctn md:flex md:gap-x-[10px] relative">
+        <div className="w-[70%] md:basis-[50%] mx-auto">
+          <MessageForm />
+        </div>
+        <div className="text-[1rem] md:basis-[40%] ">
           <div className="mb-[30px]">
             <h4 className="text-[#39b54a] mb-[15px]">{address.name}</h4>
             <h4 className="W-wrap">{address.info}</h4>

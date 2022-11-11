@@ -1,5 +1,7 @@
 import React from "react";
+// import useOnScreen from "../hooks";
 import { links } from "./Navbar/Navbardata";
+
 function Hero() {
   return (
     <section>

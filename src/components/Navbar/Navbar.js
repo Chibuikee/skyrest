@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { links, NavMenuList } from "./Navbardata";
 import { HiMenu } from "react-icons/hi";
+import useOnScreen from "../../hooks";
 function Navbar() {
   const [navBarToggle, setNavBarToggle] = useState(null);
   //   useEffect(() => {
@@ -12,16 +13,24 @@ function Navbar() {
   //       window.removeEventListener("resize", w);
   //     };
   //   }, []);
+  const ref = useRef();
+  const isVisible = useOnScreen(ref);
+  const bg = { backgroundColor: `${!isVisible ? "black" : ""}` };
+  // return <div ref={ref}>{isVisible && `Yep, I'm on screen`}</div>
+
   const navtogglerStyle = {
     transform: `translate(${navBarToggle ? "-50%" : "50%"})`,
   };
   return (
     <nav className="w-[90%] mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px]">
-      <h1 className="logo">Skyrest</h1>
+      <h1 ref={ref} className="logo">
+        Skyrest
+      </h1>
       <div className="Nav-ctn">
         <div
           onClick={() => setNavBarToggle(!navBarToggle)}
           className="Flex menuToggle"
+          style={bg}
         >
           <h4>MENU</h4>
           <HiMenu className="menuToggle-icon" />

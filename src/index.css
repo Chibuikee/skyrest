@@ -123,10 +123,6 @@ a {
   }
 }
 
-.ceo-image {
-  height: 200px;
-  width: 100px;
-}
 .Nav-main {
   top: 0;
   background: #0c0c0c;
@@ -177,7 +173,6 @@ a {
   display: block;
 } */
 .contactUs {
-  /* height: 100vh; */
   background-position: center;
   background-size: cover;
   background-image: url("https://preview.colorlib.com/theme/glint/images/xcontact-bg.jpg.pagespeed.ic.Yg-_T7iMmI.webp");
@@ -269,7 +264,7 @@ a {
   background-color: transparent;
   outline: none;
 }
-ceo .form-ctn button {
+.form-ctn button {
   color: #ffffff;
   background: #39b54a;
   border-color: #39b54a;

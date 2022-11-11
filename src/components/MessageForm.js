@@ -8,7 +8,7 @@ function MessageForm() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   }
   return (
-    <form className="w-full">
+    <form className="">
       <input
         className="bg-[transparent] mt-[2px] py-[15px] block border-solid border-b border-[rgba(255,255,255,0.07)] w-full"
         type="text"

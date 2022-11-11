@@ -5,7 +5,7 @@ function Footer() {
     <section className="">
       {/* <div className=" bg-[#111111] text-[rgba(255,255,255,0.3)] w-[90%] mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px]"> */}
       <div className="pb-[60px] pt-[90px] bg-[#111111] text-[rgba(255,255,255,0.3)] mx-auto">
-        <div className="footer-text-ctn md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
+        <div className="md:flex footer-text-ctn md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
           <div>
             <h1 className="mb-[3.6rem] text-[1.6rem] text-[#ffffff] font-extrabold ">
               SKYREST
