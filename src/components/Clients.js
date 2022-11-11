@@ -12,8 +12,8 @@ function Clients() {
     "https://preview.colorlib.com/theme/glint/images/clients/xmagento.png.pagespeed.ic.dhkdk5A1Gu.webp",
   ];
   return (
-    <div className="md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
-      <h4 className="text-[1rem] text-center font-bold text-[#000000] tracking-[0.25rem]">
+    <div className="py-[162px] bg-[#e6e6e6] md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
+      <h4 className="text-[1rem] text-center font-bold text-[#39b54a] tracking-[0.25rem]">
         OUR CLIENTS
       </h4>
       <h2 className="text-[3rem] text-center font-[600] mb-[18px]">
@@ -21,7 +21,7 @@ function Clients() {
       </h2>
       <div className="Flex clients-logo">
         {clients.map((item) => (
-          <img style={{ width: "100px", height: "100px" }} src={item} />
+          <img className="w-[141px] h-[141px] px-[15px]" src={item} />
         ))}
       </div>
     </div>

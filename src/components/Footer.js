@@ -5,7 +5,7 @@ function Footer() {
     <section className="">
       {/* <div className=" bg-[#111111] text-[rgba(255,255,255,0.3)] w-[90%] mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px]"> */}
       <div className="pb-[60px] pt-[90px] bg-[#111111] text-[rgba(255,255,255,0.3)] mx-auto">
-        <div className="footer-text-ctn md:flex md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
+        <div className="footer-text-ctn md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
           <div>
             <h1 className="mb-[3.6rem] text-[1.6rem] text-[#ffffff] font-extrabold ">
               SKYREST
@@ -30,9 +30,15 @@ function Footer() {
             </p>
             <div id="form">
               <div className="Flex form-ctn">
-                <HiOutlineMail size={24} id="email-icon" />
-                <input placeholder="Email Address" />
-                <button>Subscribe</button>
+                <HiOutlineMail
+                  size={24}
+                  id="email-icon"
+                  className="text-[#FFFF]"
+                />
+                <input placeholder="Email Address" className="" />
+                <button className="tracking-[2.82353px] px-[20px] h-[50.8px] bg-[rgb(57,181,74)] text-[#FFFF] text-[12px]">
+                  Subscribe
+                </button>
               </div>
             </div>
           </div>
