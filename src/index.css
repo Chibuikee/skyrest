@@ -55,11 +55,11 @@ a {
 }
 .menuToggle {
   position: relative;
-  top: 5px;
+  top: 1px;
   right: 40px;
 }
 .menuToggle h4 {
-  display: block;
+  /* display: block; */
   padding-left: 12px;
   line-height: 42px;
   font-family: "montserrat-medium", sans-serif;
@@ -111,10 +111,10 @@ a {
 }
 .scroll {
   align-items: center;
-  position: relative;
-  right: -85%;
+  position: absolute;
+  right: 95px;
   color: #ffffff;
-  bottom: 50px;
+  /* bottom: 20px; */
 }
 @media screen and (min-width: 1000px) {
   .WhatWeDo {
@@ -150,7 +150,7 @@ a {
 }
 .Hero-ctn {
   height: 100vh;
-  font-size: 3.1vw;
+  /* font-size: 3.1vw; */
   /* background-position: center;
   background-size: cover; */
   /* background-image: url("https://preview.colorlib.com/theme/glint/images/hero-bg.jpg"); */
@@ -160,8 +160,8 @@ a {
   position: relative;
   /* z-index: 700; */
   color: #ffffff;
-  width: 70%;
-  margin-left: 40px;
+  /* width: 70%; */
+  /* margin-left: 40px; */
 }
 .hero-social-ctn {
   list-style-type: none;
@@ -197,7 +197,6 @@ a {
 .hero-cta-btn {
   position: absolute;
   bottom: 50px;
-  left: 40px;
   gap: 20px;
   /* width: 40%; */
   justify-content: space-between;
@@ -218,23 +217,60 @@ a {
   border-radius: 50% 50%;
   padding: 5px 5px;
 }
+.achievements-ctn :nth-child(1) ::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  width: 150px;
+  width: 150px;
+  left: 0;
+  margin: auto auto;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
 .achievements-ctn :nth-child(2) ::before {
   content: "";
   position: absolute;
-  top: 5%;
-  width: 1px;
-  left: 50%;
-  height: 150px;
-  background: rgba(255, 255, 255, 0.25);
+  top: 50%;
+  width: 150px;
+  width: 150px;
+  left: 0;
+  margin: auto auto;
+  right: 0;
+  height: 1px;
+  background: rgba(9, 2, 75, 0.25);
 }
-.achievements-ctn :nth-child(4) ::before {
+.achievements-ctn :nth-child(3) ::before {
   content: "";
   position: absolute;
-  top: 60%;
-  width: 1px;
-  left: 50%;
-  height: 150px;
+  top: 77%;
+  width: 150px;
+  left: 0;
+  margin: auto auto;
+  right: 0;
+  height: 1px;
   background: rgba(255, 255, 255, 0.25);
+}
+@media screen and (min-width: 800px) {
+  .achievements-ctn :nth-child(2) ::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    width: 1px;
+    left: 50%;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.25);
+  }
+  .achievements-ctn :nth-child(4) ::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    width: 1px;
+    left: 50%;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.25);
+  }
 }
 .clients-logo {
   overflow: auto;
@@ -246,20 +282,30 @@ a {
   display: flex;
   width: 90%;
 } */
-.footer-text {
+.footer-email::placeholder {
+  /* margin: auto auto; */
+  text-align: center;
+}
+@media screen and (min-width: 640px) {
+  .footer-email::placeholder {
+    /* margin: auto auto; */
+    text-align: left;
+  }
+}
+/* .footer-text {
   width: 50%;
-}
-#form {
+} */
+/* #form {
   margin-bottom: 3rem;
-}
+} */
 .form-ctn {
-  width: fit-content;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  justify-content: center;
+  /* justify-content: center; */
   margin-bottom: 1.8rem;
 }
 .form-ctn input {
-  padding: 1.2rem 160px 1.2rem 15px;
+  padding: 1.2rem 10px 1.2rem 15px;
   border: none;
   background-color: transparent;
   outline: none;
@@ -283,9 +329,9 @@ a {
   font-size: 14px;
   margin: 5.4rem auto auto 0;
   justify-content: center;
+  align-items: center;
 }
-#copyright-span {
-  display: inline-block;
+.copyright-span {
   padding: 0 1rem 0 1.2rem;
 }
 .copyright > h5 a {

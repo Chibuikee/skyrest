@@ -10,7 +10,7 @@ function Whatwedo() {
         We`ve got everything you need to launch and grow your business
       </h2>
       <div className="bg-[rgba(0,0,0,0.1)] w-[75%] h-[1px] mx-auto"></div>
-      <div className="WhatWeDo grid grid-cols-[1fr,1fr] gap-y-[40px] mt-14">
+      <div className="WhatWeDo md:grid grid-cols-[1fr,1fr] gap-y-[40px] mt-14 mx-auto">
         {WhatwedoData.map((item) => (
           <div className="flex">
             <item.icon size={48} className="basis-1/4 text-[#39b54a]" />

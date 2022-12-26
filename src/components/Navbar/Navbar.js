@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { links, NavMenuList } from "./Navbardata";
 import { HiMenu } from "react-icons/hi";
 import useOnScreen from "../../hooks";
@@ -23,7 +23,7 @@ function Navbar() {
   };
   return (
     <nav className="w-[90%] mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px]">
-      <h1 ref={ref} className="logo">
+      <h1 ref={ref} className="logo" translate="no">
         Skyrest
       </h1>
       <div className="Nav-ctn">
@@ -32,7 +32,7 @@ function Navbar() {
           className="Flex menuToggle"
           style={bg}
         >
-          <h4>MENU</h4>
+          <h4 className="hidden sm:block">MENU</h4>
           <HiMenu className="menuToggle-icon" />
         </div>
         <div style={navtogglerStyle} className="Nav-main">

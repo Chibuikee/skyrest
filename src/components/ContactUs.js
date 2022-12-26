@@ -16,6 +16,7 @@ function ContactUs() {
 
       <div className="Contact-ctn md:flex md:gap-x-[10px] relative">
         <div className="w-[70%] md:basis-[50%] mx-auto">
+          <h3 className="text-center sm:text-left">SEND US A MESSAGE</h3>
           <MessageForm />
         </div>
         <div className="text-[1rem] md:basis-[40%] ">

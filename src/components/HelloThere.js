@@ -27,13 +27,13 @@ function HelloThere() {
         sint occaecat cupidatat non proident, sunt in culpa qui officia
         deserunt.
       </p>
-      <div className="relative achievements-ctn mt-[30px] mb-[39px] grid grid-cols-[1fr,1fr] mx-auto w-[90%] justify-items-center gap-y-8">
+      <div className="relative achievements-ctn mt-[30px] mb-[39px] md:grid grid-cols-[1fr,1fr] mx-auto w-[90%] justify-items-center gap-y-8">
         {data.map((item, key) => (
-          <div key={key} className="my-[15px] ">
+          <div key={key} className="my-[15px] text-center ">
             <h5 className="text-[5.25rem] leading-[5.25rem] font-semibold">
               {item.amount}
             </h5>
-            <h5 className="mt-[18px] mb-[15px] text-[1.8rem] text-[#000000]">
+            <h5 className="mt-[10px] mb-[40px] text-[1.8rem] text-[#000000]">
               {item.title}
             </h5>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 // import useOnScreen from "../hooks";
+import { HiChevronDown } from "react-icons/hi";
 import { links } from "./Navbar/Navbardata";
 
 function Hero() {
@@ -9,14 +10,14 @@ function Hero() {
       <div className="Hero-main ">
         <div className="overlay"></div>
         <div className="Hero-ctn Flex">
-          <div>
-            <h3>WELCOME TO SKYREST</h3>
-            <h1>
+          <div className="sm:ml-[40px] mx-auto w-[70%]">
+            <h3 className="text-[12px]">WELCOME TO SKYREST</h3>
+            <h1 className="text-[18px] sm:text-[3.1vw]">
               We are a creative group of people who design influential brands
               and digital experiences.
             </h1>
           </div>
-          <ul className="hero-social-ctn">
+          <ul className="hero-social-ctn hidden md:block">
             {links.map((item, key) => (
               <li key={key} className="py-[0.7rem]">
                 <a
@@ -29,12 +30,12 @@ function Hero() {
             ))}
           </ul>
         </div>
-        <div className="hero-cta-btn Flex">
+        <div className="hero-cta-btn flex flex-col sm:flex-row mx-auto sm:mx-[initial] left-0 sm:left-[40px] right-0 w-[75%] sm:w-[fit-content]">
           <button>START A PROJECT</button>
           <button>MORE ABOUT US</button>
         </div>
-        <div className="scroll Flex gap-4">
-          <span>﹀</span>
+        <div className="scroll Flex gap-4 bottom-[15px] sm:bottom-[20px]">
+          <HiChevronDown />
           <h4 className="">SCROLL DOWN</h4>
         </div>
       </div>
