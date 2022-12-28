@@ -10,7 +10,7 @@ function ContactUs() {
       <h3 className="text-[#39b54a] text-[1rem] text-center font-bold tracking-[0.25rem] relative">
         CONTACT US
       </h3>
-      <h2 className="text-[2.75rem] text-center font-[600] mb-[18px] relative">
+      <h2 className="text-[1.767rem] xxxs:text-[2.0625rem] s:text-[2.5rem] mmd:text-[2.75rem] lg:text-[3.25rem] text-center font-[600] mb-[18px] relative">
         Reach out for a new project or just say hello
       </h2>
 

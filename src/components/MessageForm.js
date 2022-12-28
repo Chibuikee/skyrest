@@ -42,7 +42,7 @@ function MessageForm() {
         value={formData.comment}
       />
 
-      <button className="tracking-[2.82353px] w-full sm:w-auto h-[50.8px] bg-[rgb(57,181,74)] text-[#FFFF] text-[12px] py-2 px-[20px] focus:outline-none">
+      <button className="my-[2rem] tracking-[2.82353px] w-full sm:w-full h-[50.8px] bg-[rgb(57,181,74)] text-[#FFFF] text-[14px] py-2 px-[20px] focus:outline-none">
         Submit
       </button>
     </form>

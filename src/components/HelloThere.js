@@ -13,7 +13,7 @@ function HelloThere() {
         <h3 className="text-[1rem] text-center font-bold text-[#000000] tracking-[0.25rem] ">
           HELLO THERE
         </h3>
-        <h1 className="text-[4.2rem] text-center font-[600] mb-[18px] ">
+        <h1 className="text-[2.47rem] xxxs:text-[3.125rem] s:text-[4rem] mmd:text-[4.5rem] lg:text-[4.875rem] text-center font-[600] mb-[18px] ">
           We Are Skyrest
         </h1>
         <div className="bg-[rgba(255,255,255,0.25)] w-[75%] h-[1px] mx-auto"></div>

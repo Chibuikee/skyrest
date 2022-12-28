@@ -1,3 +1,4 @@
+// import alex from "/alex-varela-OEhWh_xz_JM-unsplash.jpg"
 export const RWData = [
   {
     img: "https://preview.colorlib.com/theme/glint/images/portfolio/gallery/g-shutterbug.jpg",
@@ -5,17 +6,27 @@ export const RWData = [
     category: "Branding",
   },
   {
-    img: "https://preview.colorlib.com/theme/glint/images/portfolio/xwoodcraft.jpg.pagespeed.ic.9Sgb2Cbm2k.webp",
+    img: "/assets/alex-varela-OEhWh_xz_JM-unsplash.jpg",
     title: "SHUTTERBUG",
     category: "Branding",
   },
   {
-    img: "https://preview.colorlib.com/theme/glint/images/portfolio/xgrow-green.jpg.pagespeed.ic.IfG2gjDTOk.webp",
+    img: "/assets/campbell-3ZUsNJhi_Ik-unsplash.jpg",
     title: "SHUTTERBUG",
     category: "Branding",
   },
   {
-    img: "https://preview.colorlib.com/theme/glint/images/portfolio/xthe-beetle.jpg.pagespeed.ic.SN25FoWyHG.webp",
+    img: "/assets/ville-kaisla-HNCSCpWrVJA-unsplash.jpg",
+    title: "SHUTTERBUG",
+    category: "Branding",
+  },
+  {
+    img: "/assets/mayowa.jpg",
+    title: "SHUTTERBUG",
+    category: "Branding",
+  },
+  {
+    img: "/assets/sergey-sokolov-CWFpNqjp_S4-unsplash.jpg",
     title: "SHUTTERBUG",
     category: "Branding",
   },

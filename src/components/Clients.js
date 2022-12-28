@@ -16,7 +16,7 @@ function Clients() {
       <h4 className="text-[1rem] text-center font-bold text-[#39b54a] tracking-[0.25rem]">
         OUR CLIENTS
       </h4>
-      <h2 className="text-[3rem] text-center font-[600] mb-[18px]">
+      <h2 className="text-[1.767rem] xxxs:text-[2.0625rem] s:text-[2.5rem] mmd:text-[2.75rem] lg:text-[3.25rem] text-center font-[600] mb-[18px]">
         Skyrest has been honored to partner up with these clients
       </h2>
       <div className="Flex clients-logo">
