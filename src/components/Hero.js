@@ -14,7 +14,7 @@ function Hero() {
             <h3 className="text-[14.1176px] sm:text-[0.938rem] mmd:text-[1rem] relative text-center xxs:text-left text-[#757575]">
               WELCOME TO SKYREST
             </h3>
-            <h1 className="text-[30.1176px] sm:text-[2.5rem] mmd:text-[2.875rem] lg:text-[3.2rem] text-center xxs:text-left xxs:w-[90%]">
+            <h1 className="text-[30.1176px] m:text-[2.5rem] mmd:text-[2.875rem] lg:text-[3.2rem] lg:leading-[60px] text-center xxs:text-left xxs:w-[90%] xs:mb-[30px]">
               We are a creative group of people who design influential brands
               and digital experiences.
             </h1>

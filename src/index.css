@@ -48,15 +48,7 @@ a {
   /* width: 42px; */
   z-index: 501;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  background-color: #000000;
-}
+
 .menuToggle {
   position: relative;
   top: 1px;
@@ -152,6 +144,15 @@ a {
   background-position: center;
   background-size: cover;
   background-image: url("https://preview.colorlib.com/theme/glint/images/hero-bg.jpg");
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.6;
+  background-color: #000000;
 }
 .Hero-ctn {
   height: 100vh;
@@ -257,13 +258,19 @@ a {
   height: 1px;
   background: rgba(255, 255, 255, 0.25);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
+  .achievements-ctn :nth-child(1) ::before {
+    display: none;
+  }
+  .achievements-ctn :nth-child(3) ::before {
+    display: none;
+  }
   .achievements-ctn :nth-child(2) ::before {
     content: "";
     position: absolute;
     top: 5%;
     width: 1px;
-    left: 50%;
+    left: 1%;
     height: 150px;
     background: rgba(255, 255, 255, 0.25);
   }

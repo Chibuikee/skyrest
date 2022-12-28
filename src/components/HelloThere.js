@@ -27,7 +27,7 @@ function HelloThere() {
         sint occaecat cupidatat non proident, sunt in culpa qui officia
         deserunt.
       </p>
-      <div className="relative achievements-ctn mt-[30px] mb-[39px] md:grid grid-cols-[1fr,1fr] mx-auto w-[90%] justify-items-center gap-y-8">
+      <div className="relative achievements-ctn mt-[30px] mb-[39px] s:grid grid-cols-[1fr,1fr] mx-auto w-[90%] justify-items-center gap-y-8">
         {data.map((item, key) => (
           <div key={key} className="my-[15px] text-center ">
             <h5 className="text-[5.25rem] leading-[5.25rem] font-semibold">

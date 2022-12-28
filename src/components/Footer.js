@@ -13,7 +13,7 @@ function Footer() {
             >
               SKYREST
             </h1>
-            <p className="footer-text mb-[40px] sm:mb-[initial] md:w-[90%] lg:w-[60%]">
+            <p className="footer-text mb-[40px] sm:mb-[initial] md:w-[90%] pc:w-[90%] lg:w-[80%]">
               Proin eget tortor risus. Mauris blandit aliquet elit, eget
               tincidunt nibh pulvinar a. Praesent sapien massa, convallis a
               pellentesque nec, egestas non nisi. Mauris blandit aliquet elit,
