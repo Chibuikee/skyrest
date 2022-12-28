@@ -21,7 +21,11 @@ function Clients() {
       </h2>
       <div className="Flex clients-logo">
         {clients.map((item) => (
-          <img className="w-[141px] h-[141px] px-[15px]" src={item} />
+          <img
+            className="w-[141px] h-[141px] px-[15px]"
+            src={item}
+            alt="client-logo"
+          />
         ))}
       </div>
     </div>

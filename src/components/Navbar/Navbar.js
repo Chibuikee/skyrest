@@ -32,11 +32,11 @@ function Navbar() {
           className="Flex menuToggle"
           style={bg}
         >
-          <h4 className="hidden sm:block">MENU</h4>
-          <HiMenu className="menuToggle-icon" />
+          <h4 className="hidden md:block">MENU</h4>
+          <HiMenu size={30} className="menuToggle-icon " />
         </div>
         <div style={navtogglerStyle} className="Nav-main">
-          <div className="Nav-heading Flex">
+          <div className="Nav-heading Flex w-[150px] md:w-[initial]">
             <h3>NAVIGATION</h3>
             <span onClick={() => setNavBarToggle(!navBarToggle)}>x</span>
           </div>
@@ -47,12 +47,12 @@ function Navbar() {
               </li>
             ))}
           </ul>
-          <p>
+          <p className="w-[60%] md:w-[initial]">
             Perspiciatis hic praesentium nesciunt. Et neque a dolorum voluptatem
             porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis
             neque reprehenderit.
           </p>
-          <ul className="Nav-social Flex">
+          <ul className="Nav-social Flex w-[60%] md:w-[70%]">
             {links.map((item, key) => (
               <li key={key} className="">
                 <a

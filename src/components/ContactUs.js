@@ -5,7 +5,7 @@ import MessageForm from "./MessageForm";
 function ContactUs() {
   const { address, email, phone } = contactUsInfo;
   return (
-    <div className="relative text-[#ffffff] pt-[3.8rem] pb-[7.5rem] contactUs md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
+    <div className="relative text-[#ffffff] px-[25px] pt-[3.8rem] pb-[7.5rem] contactUs md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
       <div className="bg-[#000000] opacity-60 absolute top-0 left-0 h-full w-full"></div>
       <h3 className="text-[#39b54a] text-[1rem] text-center font-bold tracking-[0.25rem] relative">
         CONTACT US
@@ -15,35 +15,48 @@ function ContactUs() {
       </h2>
 
       <div className="Contact-ctn md:flex md:gap-x-[10px] relative">
-        <div className="w-[70%] md:basis-[50%] mx-auto">
-          <h3 className="text-center sm:text-left">SEND US A MESSAGE</h3>
+        <div className=" md:basis-[50%] mx-auto">
+          <h3 className="text-center sm:text-left text-[15.058px]">
+            SEND US A MESSAGE
+          </h3>
           <MessageForm />
         </div>
-        <div className="text-[1rem] md:basis-[40%] ">
+        <div className="text-[1rem] md:basis-[40%] mx-auto w-[90%]">
           <div className="mb-[30px]">
-            <h4 className="text-[#39b54a] mb-[15px]">{address.name}</h4>
-            <h4 className="W-wrap">{address.info}</h4>
+            <h4 className="text-[#39b54a] mb-[15px] font-[700] text-[15.058px] text-center md:text-left">
+              {address.name}
+            </h4>
+            <h4 className="W-wrap text-center md:text-left text-[14.117px]">
+              {address.info}
+            </h4>
           </div>
           <div className="mb-[30px]">
-            <h4 className="text-[#39b54a] mb-[15px]">{email.name}</h4>
-            <h4 className="W-wrap">
+            <h4 className="text-[#39b54a] mb-[15px] font-[700] text-[15.058px] text-center md:text-left">
+              {email.name}
+            </h4>
+            <h4 className="W-wrap text-center md:text-left text-[14.117px]">
               {email.info.map((item, key) => (
                 <span key={key}>{item}</span>
               ))}
             </h4>
           </div>
-          <div className="mb-[30px]">
-            <h4 className="text-[#39b54a] mb-[15px]">{phone.name}</h4>
-            <div>
+          <div className="mb-[30px] mx-auto md:mx-[initial] w-[90%]">
+            <h4 className="text-[#39b54a] mb-[15px] text-center md:text-left font-[700] text-[15.058px]">
+              {phone.name}
+            </h4>
+            <div className="">
               {phone.info.map((item, key) => (
-                <div key={key}>
-                  <span>{item.name}</span>
-                  <span>{item.number}</span>
-                </div>
+                <h3
+                  key={key}
+                  className="text-center md:text-left text-[14.117px]"
+                >
+                  <span className="">{item.name}</span>
+                  <span className="">{item.number}</span>
+                </h3>
               ))}
             </div>
           </div>
-          <ul className="Flex gap-x-4">
+          <ul className="Flex gap-x-4 mx-auto md:mx-[initial] w-[165px] sm:w-[31%]">
             {links.map((item, key) => (
               <li key={key} className="">
                 <a

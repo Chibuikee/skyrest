@@ -16,7 +16,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+.font1 {
+  font-family: montserrat-medium, sans-serif;
+  font-style: normal;
+  font-variant-ligatures: common-ligatures;
+}
 .nav {
   position: absolute;
   height: 96px;
@@ -37,7 +41,7 @@ a {
 }
 .Nav-ctn {
   position: fixed;
-  top: 24px;
+  top: 30px;
   cursor: pointer;
   right: 10px;
   /* height: 42px; */
@@ -78,7 +82,7 @@ a {
 .Nav-heading {
   align-items: center;
   justify-content: space-between;
-  gap: 10%;
+  /* gap: 10%; */
   font-family: "montserrat-semibold", sans-serif;
   font-size: 11px;
   line-height: 1.5;
@@ -87,6 +91,7 @@ a {
   margin-bottom: 3.8rem;
   margin-top: 0.9rem;
   color: #39b54a;
+  /* width: 150px; */
 }
 .Nav-heading span {
   font-size: 16px;
@@ -127,7 +132,7 @@ a {
   top: 0;
   background: #0c0c0c;
   color: rgb(255, 255, 255);
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 3rem 2rem 2rem 1rem;
   height: 100%;
   width: 280px;
   position: fixed;
@@ -155,8 +160,7 @@ a {
   background-size: cover; */
   /* background-image: url("https://preview.colorlib.com/theme/glint/images/hero-bg.jpg"); */
 }
-.Hero-ctn h1,
-.Hero-ctn h3 {
+.Hero-ctn h1 {
   position: relative;
   /* z-index: 700; */
   color: #ffffff;
@@ -179,7 +183,7 @@ a {
 }
 .Nav-social {
   justify-content: space-between;
-  width: 70%;
+  /* width: 70%; */
   margin-top: 2.7rem;
 }
 .nav-svg {
@@ -195,14 +199,15 @@ a {
   hero-social
 } */
 .hero-cta-btn {
+  /* margin-top: 90px; */
   position: absolute;
-  bottom: 50px;
+  /* bottom: 0; */
   gap: 20px;
   /* width: 40%; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .hero-cta-btn button {
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
   background: transparent;
   color: #ffffff;
   border: #ffffff solid 1px;
@@ -285,6 +290,7 @@ a {
 .footer-email::placeholder {
   /* margin: auto auto; */
   text-align: center;
+  font-size: 13px;
 }
 @media screen and (min-width: 640px) {
   .footer-email::placeholder {
@@ -302,7 +308,7 @@ a {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   /* justify-content: center; */
-  margin-bottom: 1.8rem;
+  /* margin-bottom: 1.8rem; */
 }
 .form-ctn input {
   padding: 1.2rem 10px 1.2rem 15px;

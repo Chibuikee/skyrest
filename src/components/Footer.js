@@ -13,7 +13,7 @@ function Footer() {
             >
               SKYREST
             </h1>
-            <p className="footer-text mb-[40px] sm:mb-[initial]">
+            <p className="footer-text mb-[40px] sm:mb-[initial] md:w-[90%] lg:w-[60%]">
               Proin eget tortor risus. Mauris blandit aliquet elit, eget
               tincidunt nibh pulvinar a. Praesent sapien massa, convallis a
               pellentesque nec, egestas non nisi. Mauris blandit aliquet elit,
@@ -23,7 +23,7 @@ function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="mb-[3.6rem] text-[#FFFF] text-[1.6rem]">
+            <h4 className="mb-[3.6rem] text-[#FFFF] text-[1.2rem] md:text-[1.6rem]">
               Get Notified
             </h4>
             <p className="footer-text mx-auto sm:mx-[initial] ">
@@ -31,8 +31,8 @@ function Footer() {
               aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt
               iusto porro.
             </p>
-            <div className="sm:flex justify-between">
-              <div className="Flex form-ctn">
+            <div className="sm:flex sm:items-center justify-between">
+              <div className="Flex form-ctn mb-[1.8rem] sm:mb-[initial]">
                 <HiOutlineMail
                   size={24}
                   id="email-icon"
