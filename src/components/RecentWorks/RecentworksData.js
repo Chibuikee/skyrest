@@ -16,12 +16,12 @@ export const RWData = [
     category: "Branding",
   },
   {
-    img: "/assets/ville-kaisla-HNCSCpWrVJA-unsplash.jpg",
+    img: "/assets/mayowa.jpg",
     title: "SHUTTERBUG",
     category: "Branding",
   },
   {
-    img: "/assets/mayowa.jpg",
+    img: "/assets/ville-kaisla-HNCSCpWrVJA-unsplash.jpg",
     title: "SHUTTERBUG",
     category: "Branding",
   },
