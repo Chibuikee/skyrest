@@ -350,9 +350,23 @@ a {
 .copyright > h5 a {
   color: #ffffff;
 }
+.hi {
+  z-index: 70;
+}
 .details {
   display: none;
 }
+
+.iconDrop {
+  opacity: 0;
+  top: -100px;
+}
+.details:hover .iconDrop {
+  opacity: 1;
+  top: 0px;
+  transition: all 2.5s ease;
+}
+
 .Work-card:hover .details {
   display: block;
   position: absolute;
@@ -362,6 +376,19 @@ a {
   height: 100%;
   opacity: 0.8;
   background-color: #000000;
+  z-index: 99;
+}
+.details:hover ~ .hi {
+  scale: 1.05;
+  transition: scale 2.5s ease;
+  padding: 15px;
+}
+.recent-ctn-info {
+  bottom: 0px;
+  transition: bottom 1.5s ease;
+}
+.details:hover .recent-ctn-info {
+  bottom: 50px;
 }
 .recentworks {
   grid-template-rows: 540px 100px 540px 100px 540px;

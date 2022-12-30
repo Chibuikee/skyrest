@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLink } from "react-icons/fa";
 import { RWData } from "./RecentworksData";
 function RecentworksBuilder() {
+  // let scale_anime;
+  // function handle_scale() {
+  //   scale;
+  // }
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
   return (
     <section className="">
       <div className="bg-[#111111] text-[white] pt-[150px] pb-[252px] mx-auto md:px-[2rem] md:w-[100%] w-[94%] ">
@@ -16,12 +29,11 @@ function RecentworksBuilder() {
       <div className="md:px-[2rem] md:w-[100%] w-[94%] mx-auto mt-[-200px] recentworks s:grid s:s:grid-rows-[244px_50px_244px_50px_244px] mdd:s:grid-rows-[300px_70px_300px_70px_300px] pc:grid-rows-[540px_100px_540px_100px_540px] grid-cols-[1fr_1fr] s:h-[1820px]">
         {RWData.map((item, key) => (
           <div key={key} style={{ position: "relative" }} className="Work-card">
-            <img
-              style={{ height: "100%", width: "100%" }}
-              src={process.env.PUBLIC_URL + `${item.img}`}
-              alt="recent work"
-            />
-            <div className="details text-[white]">
+            <div
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}
+              className="details text-[white]"
+            >
               <div className="iconDrop relative">
                 <div className="dropLine absolute top-[0px] left-[8.5%] w-[1px] h-10 bg-white"></div>
                 <div className="absolute flex items-center justify-center top-[40px] left-8 border rounded-full px-3 py-3">
@@ -31,11 +43,17 @@ function RecentworksBuilder() {
               <div className="absolute right-0 left-0 m-auto w-2 h-2 top-0 bottom-0 text-[40px] ">
                 +
               </div>
-              <div className="absolute bottom-[50px] left-8">
+              <div className="absolute recent-ctn-info left-8">
                 <h4>{item.title}</h4>
                 <h4>{item.category}</h4>
               </div>
             </div>
+            <img
+              className="recent-ctn-img hi"
+              style={{ height: "100%", width: "100%" }}
+              src={process.env.PUBLIC_URL + `${item.img}`}
+              alt="recent work"
+            />
           </div>
         ))}
       </div>
