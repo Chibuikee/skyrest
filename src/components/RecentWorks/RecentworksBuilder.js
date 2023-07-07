@@ -27,7 +27,7 @@ function RecentworksBuilder() {
         {RWData.map((item, index) => (
           <div
             key={item.title + index}
-            style={{ position: "relative" }}
+            // style={{ position: "relative" }}
             className="Work-card"
           >
             <div

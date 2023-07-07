@@ -48,7 +48,7 @@ const RecentWorkCarousel = forwardRef((props, ref) => {
     <div
       className={`${
         openPopup == true ? "block" : "hidden"
-      } fixed text-[white] w-screen h-screen bg-[#000000] z-[99]`}
+      } fixed text-[white] top-0 w-screen h-screen bg-[#000000] z-[99]`}
     >
       <div className="flex justify-between px-10 py-3">
         <span>
