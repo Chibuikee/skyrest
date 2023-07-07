@@ -19,13 +19,13 @@ function HelloThere() {
         <div className="bg-[rgba(255,255,255,0.25)] w-[75%] h-[1px] mx-auto"></div>
       </div>
       <p className="text-[1.5rem] leading-[2.625rem] text-center px-[15px] mb-[3rem]">
-        Mayowa Adeboye dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt.
+        Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt. Mayowa
+        Adeboye
       </p>
       <div className="relative achievements-ctn mt-[30px] mb-[39px] s:grid grid-cols-[1fr,1fr] mx-auto w-[90%] justify-items-center gap-y-8">
         {data.map((item, key) => (

@@ -23,7 +23,7 @@ function Navbar() {
   };
   return (
     <nav className="w-[90%] mx-auto sm:max-w-[600px] md:max-w-[760px] lg:max-w-[1010px] xl:max-w-[1280px]">
-      <h1 ref={ref} className="logo" translate="no">
+      <h1 ref={ref} className="logo" title="logo!" translate="no">
         Skyrest
       </h1>
       <div className="Nav-ctn">
@@ -41,8 +41,8 @@ function Navbar() {
             <span onClick={() => setNavBarToggle(!navBarToggle)}>x</span>
           </div>
           <ul className="Nav-menu">
-            {NavMenuList.childList.map((item) => (
-              <li>
+            {NavMenuList.childList.map((item, key) => (
+              <li key={item.name + key}>
                 <a href={item.url}>{item.name}</a>
               </li>
             ))}

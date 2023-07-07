@@ -8,6 +8,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.hello {
+  outline: green solid 1px;
+}
 html {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
