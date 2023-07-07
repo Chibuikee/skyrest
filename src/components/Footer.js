@@ -50,12 +50,12 @@ function Footer() {
           </div>
         </div>
         <div className="sm:flex copyright">
-          <h5>© Copyright Skyrest 2022</h5>
+          <h5>© Copyright Skyrest 2023</h5>
           <span translate="no" className="copyright-span hidden sm:block">
             |
           </span>
           <h5 className="mt-3 sm:mt-[initial]">
-            Site Design by <a href="/">Skyrest</a>
+            Site Design by <a href="/">Chibs</a>
           </h5>
         </div>
       </div>

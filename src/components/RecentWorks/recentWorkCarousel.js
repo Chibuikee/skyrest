@@ -72,6 +72,7 @@ const RecentWorkCarousel = forwardRef((props, ref) => {
       <Slide
         ref={slideRef}
         autoplay={false}
+        transitionDuration={0}
         {...RecentWorksCarouselButtons}
         onChange={(from, to) => {
           setIndex(to);
