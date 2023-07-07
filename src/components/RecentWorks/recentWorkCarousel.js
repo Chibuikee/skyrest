@@ -88,7 +88,7 @@ const RecentWorkCarousel = forwardRef((props, ref) => {
         ))}
       </Slide>
 
-      <div className="text-center text-[white] p-[10px] relative hello ">
+      <div className="text-center text-[white] p-[10px] hello ">
         <h4 className="mb-[0.6rem]">{item.title}</h4>
         <h4 className="text-[13px] mb-[3rem]">{item.desc}</h4>
       </div>

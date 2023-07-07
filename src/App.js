@@ -11,17 +11,17 @@ function App() {
   // console.log("Testing Hero render");
   return (
     <div className="App">
-      {/* <header className="App-header"> */}
-      {/* <Navbar /> */}
-      {/* </header> */}
-      {/* <Hero /> */}
-      {/* <HelloThere /> */}
-      {/* <Whatwedo /> */}
+      <header className="App-header">
+        <Navbar />
+      </header>
+      <Hero />
+      <HelloThere />
+      <Whatwedo />
       <RecentworksBuilder />
-      {/* <Clients /> */}
-      {/* <Testimonybuilder /> */}
-      {/* <ContactUs /> */}
-      {/* <Footer /> */}
+      <Clients />
+      <Testimonybuilder />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
