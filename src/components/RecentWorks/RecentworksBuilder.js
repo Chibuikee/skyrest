@@ -23,11 +23,11 @@ function RecentworksBuilder() {
         </h2>
         <div className="bg-[rgba(214,207,113,0.93)] w-[75%] h-[1px] mx-auto my-11"></div>
       </div>
-      <div className="md:px-[2rem] md:w-[100%] w-[94%] mx-auto mt-[-200px] recentworks s:grid s:s:grid-rows-[244px_50px_244px_50px_244px] mdd:s:grid-rows-[300px_70px_300px_70px_300px] pc:grid-rows-[540px_100px_540px_100px_540px] grid-cols-[1fr_1fr] s:h-[1820px]">
+      <div className="md:px-[2rem] md:w-[100%] w-[94%] mx-auto mt-[-200px] recentworks s:grid s:s:grid-rows-[244px_50px_244px_50px_244px] mdd:s:grid-rows-[300px_70px_300px_70px_300px] pc:grid-rows-[540px_100px_540px_100px_540px] grid-cols-[1fr_1fr] ">
         {RWData.map((item, index) => (
           <div
             key={item.title + index}
-            // style={{ position: "relative" }}
+            style={{ position: "relative", zIndex: "1" }}
             className="Work-card"
           >
             <div
