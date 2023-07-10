@@ -1,18 +1,18 @@
 export const contactUsInfo = {
   address: {
     name: "Where to Find Us",
-    info: "1600 Amphitheatre Parkway Mountain View, CA 94043 US",
+    info: "200 Amphitheatre university of Lagos, Nigeria",
   },
   email: {
     name: "Email Us At",
-    info: ["contact@glintsite.com", "info@glintsite.com"],
+    info: ["sopewenike@gmail.com", "sopewenike@yahoo.com"],
   },
   phone: {
     name: "Call Us At",
     info: [
-      { name: "Phone", number: "(+63) 555 1212" },
-      { name: "Mobile", number: "(+63) 555 0100" },
-      { name: "Fax", number: "(+63) 555 0101" },
+      { name: "Phone", number: "(+00) 000 0000" },
+      { name: "Mobile", number: "(+234) 9032 125 576" },
+      { name: "Fax", number: "(+00) 000 0000" },
     ],
   },
 };

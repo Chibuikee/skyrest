@@ -8,7 +8,6 @@ import Whatwedo from "./components/WhatWeDo/Whatwedo";
 import Clients from "./components/Clients";
 import RecentworksBuilder from "./components/RecentWorks/RecentworksBuilder";
 function App() {
-  // console.log("Testing Hero render");
   return (
     <div className="App">
       <header className="App-header">

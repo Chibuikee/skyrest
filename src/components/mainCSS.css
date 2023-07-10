@@ -353,16 +353,26 @@ a {
 .copyright > h5 a {
   color: #ffffff;
 }
+.hi {
+  z-index: 70;
+}
+.details {
+  display: none;
+}
 
+.iconDrop {
+  opacity: 1;
+  top: -100px;
+  transition: all 2.5s ease-in-out;
+}
 .details:hover .iconDrop {
   opacity: 1;
   top: 0px;
   transition: all 2.5s ease;
 }
-/* .recent-img {
-  z-index: 70;
-} */
+
 .Work-card:hover .details {
+  display: block;
   position: absolute;
   top: 0;
   /* left: 0; */
@@ -371,14 +381,16 @@ a {
   opacity: 0.8;
   background-color: #000000;
   z-index: 99;
-  transition: background-color 2.5s ease;
 }
-.details:hover ~ .recent-img {
+.details:hover ~ .hi {
   scale: 1.05;
   transition: scale 2.5s ease;
-  /* padding: 15px; */
+  padding: 15px;
 }
-
+.recent-ctn-info {
+  bottom: 0px;
+  transition: bottom 1.5s ease;
+}
 .details:hover .recent-ctn-info {
   transition: all 1.5s ease;
   bottom: 50px;
@@ -386,7 +398,6 @@ a {
 .recentworks {
   grid-template-rows: 540px 100px 540px 100px 540px;
 }
-
 .recentworks :nth-child(1) {
   grid-row: 1/3;
   /* grid-column: 1/2; */

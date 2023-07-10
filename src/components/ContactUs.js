@@ -5,15 +5,15 @@ import MessageForm from "./MessageForm";
 function ContactUs() {
   const { address, email, phone } = contactUsInfo;
   return (
-    <div className="relative text-[#ffffff] px-[25px] pt-[3.8rem] pb-[7.5rem] contactUs md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
+    <div className="relative text-[#ffffff] px-[25px] pt-[6.8rem] pb-[7.5rem] contactUs md:px-[5rem] md:w-[100%] w-[94%] mx-auto">
       <div className="bg-[#000000] opacity-60 absolute top-0 left-0 h-full w-full"></div>
+      <div className="bg-[#39b54a] absolute h-[8.4rem] w-[2px] top-[-60px] left-[50%]"></div>{" "}
       <h3 className="text-[#39b54a] text-[1rem] text-center font-bold tracking-[0.25rem] relative">
         CONTACT US
       </h3>
       <h2 className="text-[1.767rem] xxxs:text-[2.0625rem] s:text-[2.5rem] mmd:text-[2.75rem] lg:text-[3.25rem] text-center font-[600] mb-[18px] relative">
         Reach out for a new project or just say hello
       </h2>
-
       <div className="Contact-ctn md:flex md:gap-x-[10px] relative">
         <div className=" md:basis-[50%] mx-auto">
           <h3 className="text-center sm:text-left text-[15.058px]">
@@ -36,7 +36,9 @@ function ContactUs() {
             </h4>
             <h4 className="W-wrap text-center md:text-left text-[14.117px]">
               {email.info.map((item, key) => (
-                <span key={key}>{item}</span>
+                <span className="block" key={key}>
+                  {item}
+                </span>
               ))}
             </h4>
           </div>

@@ -25,9 +25,10 @@ const RecentWorkCarousel = forwardRef((props, ref) => {
     setPopup: setPopup,
   }));
   useEffect(() => {
-    function ScrollOff() {
+    function ScrollOff(e) {
       console.log("event listener is working");
       setPopup(false);
+      console.log(e);
     }
     if (openPopup === true) {
       window.addEventListener("scroll", ScrollOff);
@@ -41,7 +42,6 @@ const RecentWorkCarousel = forwardRef((props, ref) => {
       console.log("scroll event removed");
     };
   });
-
   const item = RWData[Index];
   // console.log("getting component ref", openPopup);
   return (
@@ -81,7 +81,7 @@ const RecentWorkCarousel = forwardRef((props, ref) => {
         {RWData.map((image) => (
           <div
             key={image.title}
-            className="max-h-[355px] xs:max-h-[400px] flex items-center lg:max-h-[500px]"
+            className="max-h-[355px] flex items-center xl:max-h-[400px]"
           >
             <img
               className="xs:h-[455px] pc:h-[755px] object-contain w-full mx-auto xs:w-[722px]  bg-[#000000]"

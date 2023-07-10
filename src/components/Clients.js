@@ -78,12 +78,13 @@ function Clients() {
         slidesToScroll={2}
         responsive={responsiveSettings}
         slidesToShow={2}
-        {...RecentWorksCarouselButtons}
+        // {...RecentWorksCarouselButtons}
+        arrows={false}
       >
         {clients.map((item) => (
           <img
             key={item.img}
-            className="max-w-[141px] max-h-[141px]"
+            className="max-w-[141px] m:ml-6 max-h-[141px]"
             src={process.env.PUBLIC_URL + `${item.img}`}
             alt="client-logo"
           />

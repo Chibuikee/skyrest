@@ -44,7 +44,7 @@ function Footer() {
                 />
               </div>
               <button className="w-full sm:w-auto tracking-[2.82353px] px-[20px] h-[50.8px] bg-[rgb(57,181,74)] text-[#FFFF] text-[12px]">
-                Subscribe
+                SUBSCRIBE
               </button>
             </div>
           </div>
@@ -55,7 +55,7 @@ function Footer() {
             |
           </span>
           <h5 className="mt-3 sm:mt-[initial]">
-            Site Design by <a href="/">Chibs</a>
+            Site Developed by <a href="/">Chibs</a>
           </h5>
         </div>
       </div>

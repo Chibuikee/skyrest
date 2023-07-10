@@ -37,7 +37,7 @@ function Hero() {
           <button className="xs:px-[2rem] xs:py-[1rem]">MORE ABOUT US</button>
         </div>
         <div className="scroll hidden sm:flex gap-4 bottom-[15px] sm:bottom-[20px]">
-          <HiChevronDown />
+          <HiChevronDown className="text-[green]" />
           <h4>SCROLL DOWN</h4>
         </div>
       </div>
